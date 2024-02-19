@@ -90,10 +90,10 @@ The *Management Node* comprises three independent functions:
      It detects error conditions which can be causes by:
       - Loss of communication with sensor nodes.
       - Sensor data falling outside of safe ranges. Those can be defined individually using [ROS Parameters](https://wiki.ros.org/Parameter%20Server)
-      - Parameter keys and default values are defined in [RobotManagerDefs.h](https://github.com/pawijaw/POLARIS_GEM_e2_manager/blob/main/src/robot_manager/manager/src/ManagerDefs.h) 
+      - Parameter keys and default values are defined in [RobotManagerDefs.h](https://github.com/pawijaw/POLARIS_GEM_e2_manager/blob/master/src/robot_management_pack/robot_manager/src/RobotManagerDefs.h) 
    - *High Level Navigation Planner* communicates with the nodes running the navigation algorithms form the POLARIS_GEM_e2 package. The nodes have been modified to implement the approriate interfaces:
-      - [Pure Pursuit]() algorithm.
-      - [Stanley]() algorithm.
+      - [Pure Pursuit](https://github.com/pawijaw/POLARIS_GEM_e2/tree/main/polaris_gem_drivers_sim/gem_pure_pursuit_sim) algorithm.
+      - [Stanley](https://github.com/pawijaw/POLARIS_GEM_e2/tree/main/polaris_gem_drivers_sim/gem_stanley_sim) algorithm.
 	 
 2. *Mock Manager* configures the *Sensor Mocks* with user-defined data profiles.
 

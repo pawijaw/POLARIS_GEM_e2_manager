@@ -2,8 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm+all,linux,windows,macos,vim,visualstudiocode,git
 
 ### Catkin (ROS1 assignment project for TII)
-devel*
-build*
+devel
+build
 
 
 ### Git ###
