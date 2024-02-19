@@ -20,43 +20,42 @@ On Ubuntu 20.04 LTS:
 
 + Install packages required by the *Polaris GEM e2* simulator:
 ```bash
-	$ sudo apt install ros-noetic-ackermann-msgs ros-noetic-geometry2 \
-		ros-noetic-hector-gazebo ros-noetic-hector-models ros-noetic-jsk-rviz-plugins \
-		ros-noetic-ros-control ros-noetic-ros-controllers ros-noetic-velodyne-simulator
+sudo apt install ros-noetic-ackermann-msgs ros-noetic-geometry2 \
+ros-noetic-hector-gazebo ros-noetic-hector-models ros-noetic-jsk-rviz-plugins \
+ros-noetic-ros-control ros-noetic-ros-controllers ros-noetic-velodyne-simulator
 ```
 
 + Install other required packages:
 ```bash
-  sudo apt install python3-catkin-tools python3-rosdep python3-rosinstall \
-    python3-rosinstall-generator python3-wstool build-essential \
-    qt5-default libqt5charts5-dev
+sudo apt install python3-catkin-tools python3-rosdep python3-rosinstall \
+python3-rosinstall-generator python3-wstool build-essential \
+qt5-default libqt5charts5-dev
 ``` 
 
 + Clone the repository and its submodules:
 ```bash
-  git clone --recurse-submodules git@github.com:pawijaw/POLARIS_GEM_e2_manager.git
+git clone --recurse-submodules git@github.com:pawijaw/POLARIS_GEM_e2_manager.git
 ``` 
 
 + Build the entire workspace:
 ```bash
-  cd POLARIS_GEM_e2_manager
-  ./build.sh
+cd POLARIS_GEM_e2_manager
+./build.sh
 ``` 
 
 + Start everything. This will start *Polaris GEM e2* simulator in simulated time mode:
 ```bash
-  ./start.sh
+./start.sh
 ``` 
 
 + Alternatively, *Polaris GEM e2* simulator can be started in wall clock mode:
 ```bash
-  ./start.sh use_sim_time:="false"
+./start.sh use_sim_time:="false"
 ``` 
 
 + (Optional) Build a docker image:
 ```bash
-  cd POLARIS_GEM_e2_manager
-  docker 
+docker build -t robot_manager .
 ``` 
 
 ## Repository structure
