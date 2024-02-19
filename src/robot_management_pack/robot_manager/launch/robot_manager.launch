@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  
+    <!-- Load the joint controllers. One of these publishes the joint states to joint_states. -->
+  <node name="robot_manager" pkg="robot_manager" type="robot_manager" respawn="false" output="screen"/>  
+  <node name="battery_mock" pkg="battery_mock" type="battery_mock" respawn="false" output="screen"/>  
+  <node name="estop_mock" pkg="estop_mock" type="estop_mock" respawn="false" output="screen"/>  
+  <node name="gps_mock" pkg="gps_mock" type="gps_mock" respawn="false" output="screen"/>  
+  <node name="temperature_mock" pkg="temperature_mock" type="temperature_mock" respawn="false" output="screen"/>  
+  <node name="v2x_mock" pkg="v2x_mock" type="v2x_mock" respawn="false" output="screen"/>  
+  
+  <node name="gem_pure_pursuit_sim" pkg="gem_pure_pursuit_sim" type="pure_pursuit_sim.py" respawn="false" output="screen"/>  
+  <node name="gem_stanley_sim" pkg="gem_stanley_sim" type="stanley_sim.py" respawn="false" output="screen"/>  
+            
+   
+</launch>
+
+
+
+
+

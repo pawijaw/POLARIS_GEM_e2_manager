@@ -1,0 +1,3 @@
+[submodule "src/POLARIS_GEM_e2"]
+	path = src/POLARIS_GEM_e2
+	url = git@github.com:pawijaw/POLARIS_GEM_e2.git
